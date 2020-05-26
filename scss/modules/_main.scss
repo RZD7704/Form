@@ -18,13 +18,17 @@
     margin-bottom: 60px;
     // padding-bottom: 15px;
     @media (max-width: $mobile) {
-      font-size: 16px;
+      font-size: 18px;
       // padding-bottom: 75px;
-      height: auto;
+      height: 50px;
+      width: 240px;
+      margin-left: 40%;
       // width: 350px;
       // height: 100px;
       // background: red;
     }
+
+
 
     &__p {
         font-weight: 800;
@@ -51,11 +55,12 @@
 
     &__head {
         background: url('../images/main-head.png') no-repeat top center;
-        // @media (max-width: $mobile) {
-        //   // width: 945px;
+        @media (max-width: $mobile) {
+          border-radius:45px 45px 0px 0px;
+          
         // //  background: red;
         // margin-left: 50px;
-        // }
+        }
     }
 
     &__head--h {
@@ -72,7 +77,7 @@
           font-size: 20px;
           padding-bottom: 0px;
           padding-top: 15px;
-          margin-left: 0;
+          margin-left: 10px;
         }
 
     }
@@ -91,7 +96,7 @@
         @media (max-width: $mobile) {
           font-size: 16px;
           padding-bottom: 45px;
-          margin-left: 0;
+          margin-left: 10px;
         }
     }
 
