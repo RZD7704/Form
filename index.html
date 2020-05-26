@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<section class="head">
+		<div class="container">
+			<div class="row header">
+				<a class="header__logo " href="#">
+					<img class="header__logo--img" src="images/logo.svg" alt="Logo">
+					<p class="header__logo--p">Сайт міськради</p>
+				</a>
+
+				<div class="header__info ">
+					<a class="header__info--a" href="tel:0532573244">(0532) 57-32-44</a>
+					<p class="header__info--p">Гаряча лінія</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="commit col-md-3 offset-9">
+					<p class="commit__p">11 звернень вже подано</p>
+				</div> 
+
+				<div class="form col-md-12">
+					<div class="form__head">
+						<h1 class="form__head--h col-md-6 offset-2">Долучись до розвитку освіти в Полтаві!</h1>
+						<p class="form__head--p col-md-7 offset-2">Цей сайт працює для збору повідомлень та побажань, які допоможуть підвищити якість освітніх послуг в Полтаві.</p>
+					</div>
+					<div class="form__body">
+						<div class="form__body--button">
+							<a href="#" class="button">Батьки / учні</a>
+							<a href="#" class="button">Вчителі</a>
+						</div>
+
+						<div class="form__body--radio">
+							<div class="radioblock">
+								<p class="input__p input__p1 offset-1">Ви:</p>
+								<div class="radio1">
+									<div class="radio offset-1">
+										<input class="custom-radio1" type="radio" id="color-1" name="color1" value="Батьки">
+										<label class="label" for="color-1">Батьки</label>
+									</div>
+									
+									<div class="radio offset-1">
+										<input class="custom-radio1" type="radio" id="color-2" name="color1" value="Учень">
+										<label class="label" for="color-2">Учень</label>
+									</div>
+								</div>
+							</div>
+							<div class="radioblock">
+								<p class="input__p offset-1">Заклад:</p>
+								<div class="radio offset-1">
+									<input class="custom-radio2" type="radio" id="color-3" name="color2" value="school">
+									<label class="label" for="color-3">Шкільний заклад освіти</label>
+								</div>
+								
+								<div class="radio offset-1">
+									<input class="custom-radio2" type="radio" id="color-4" name="color2" value="before">
+									<label class="label" for="color-4">Дошкільний заклад освіти</label>
+								</div>
+								<div class="radio offset-1">
+									<input class="custom-radio2" type="radio" id="color-5" name="color2" value="univercity" >
+									<label class="label" for="color-5">Заклад професійно-технічної освіти</label>
+								</div>
+							</div>
+							<div class="radioblock">
+								<p class="input__p offset-1">Тип повідомлення:</p>
+								<div class="radio offset-1">
+									<input class="custom-radio3" type="radio" id="color-6" name="color3" value="Побажання">
+									<label class="label" for="color-6">Побажання</label>
+								</div>
+								
+								<div class="radio offset-1">
+									<input class="custom-radio3" type="radio" id="color-7" name="color3" value="Скарга">
+									<label class="label" for="color-7">Скарга</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__body--message">
+							<div class="message-block offset-1">
+								<p class="message-block--p">Проблема, якої стосується повідомлення:</p>
+								<form action="#" class="form">
+									<textarea name="message" cols="30" rows="10" placeholder="" class="field field-text message-block--m"></textarea>
+								</form>
+							</div>
+
+							<div class="message-block offset-1">
+								<p class="message-block--p">Як ви бачите вирішення цієї проблеми?</p>
+								<form action="#" class="form">
+									<textarea name="message" cols="30" rows="10" placeholder="" class="field-text message-block--m"></textarea>
+								</form>
+							</div>
+						</div>
+						
+						<div class="form__body--checkbox">
+							<div class="checkbox offset-1">
+								<input class="custom-checkbox" type="checkbox" id="color-8" name="color-8" value="indigo">
+								<label class="label label-check" for="color-8"> Залишити звернення анонімно</label>
+							</div>
+						</div>
+
+						<div class="form__body--feetback offset-1">
+							<p class="form__body--feetback-p">* Якщо ви хочете отримати зворотній зв’язок після <br> розгляду звернення – залиште свої контакти.</p>
+							<div class="form__body--feetback-name">
+								<p class="form__body--feetback-h">Ваше ім'я:</p>
+								<form action="#" class="form">
+									<input type="text" name="name" placeholder="" class="field">
+								</form>
+							</div>
+
+							<div class="form__body--feetback-name">
+								<p class="form__body--feetback-h">Ваш телефон:</p>
+								<form action="#" class="form">
+									<input type="tel" name="phone" placeholder="+38" class="field">
+								</form>
+							</div>
+
+							<div class="form__body--button">
+								<a href="#" class="button btn-send">Надіслати</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<div class="row footer">
+				<a class="footer__logo " href="#">
+					<img class="footer__logo--img" src="images/logo.svg" alt="Logo">
+					<p class="footer__logo--p">Сайт міськради</p>
+				</a>
+
+				<div class="footer__info ">
+					<a class="footer__info--a" href="tel:0532573244">(0532) 57-32-44</a>
+					<p class="footer__info--p">Гаряча лінія</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
