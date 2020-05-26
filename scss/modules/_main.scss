@@ -1,10 +1,7 @@
 .main {
     background: url('../images/main-gb.png') no-repeat top center;
     background-size: 100%;
-    @media (max-width: 900px) {
-      width: 100vh;
-      background-size: 900px;
-    }
+
     // width: 100vh;
     // position: relative;
     
@@ -19,6 +16,15 @@
     z-index: 999;
     margin-top: 55px;
     margin-bottom: 60px;
+    // padding-bottom: 15px;
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      // padding-bottom: 75px;
+      height: auto;
+      // width: 350px;
+      // height: 100px;
+      // background: red;
+    }
 
     &__p {
         font-weight: 800;
@@ -31,6 +37,13 @@
         color: #363636;
         margin-top: 8px;
         margin-left: 15px;
+        padding-bottom: 15px;
+        @media (max-width: $mobile) {
+          font-size: 14px;
+          // padding-bottom: 75px;
+          // height: 100px;
+          // background: red;
+        }
     }
 }
 
@@ -38,9 +51,11 @@
 
     &__head {
         background: url('../images/main-head.png') no-repeat top center;
-        @media (max-width: 900px) {
-         min-width: 900px
-        }
+        // @media (max-width: $mobile) {
+        //   // width: 945px;
+        // //  background: red;
+        // margin-left: 50px;
+        // }
     }
 
     &__head--h {
@@ -51,9 +66,15 @@
         align-items: center;
         letter-spacing: 0.0075em;
         color: #F3F3F3;
-        padding-top: 45px;
+        padding-top: 25px;
         padding-bottom: 20px;
-        // padding-left: 175px;
+        @media (max-width: $mobile) {
+          font-size: 20px;
+          padding-bottom: 0px;
+          padding-top: 15px;
+          margin-left: 0;
+        }
+
     }
 
     &__head--p {
@@ -62,7 +83,16 @@
         letter-spacing: 0.0075em;
         color: #F3F3F3; 
         // padding-left: 175px;
-        padding-bottom: 35px;
+        // padding-bottom: 35px;
+        // @media (min-width: $mobile-portrait) {
+        //   // padding-top: 15px;
+        //   //  background: red;
+        //   }
+        @media (max-width: $mobile) {
+          font-size: 16px;
+          padding-bottom: 45px;
+          margin-left: 0;
+        }
     }
 
     &__body {
@@ -73,6 +103,14 @@
         width: 945px;
         height: 1535px;
         // margin-top: -21px;
+          @media (max-width: $mobile) {
+            margin-left: 0;
+            // background: red;
+            width: auto;
+            margin-top: -30px;
+            height: 1610px;
+            margin-bottom: 15px;
+          }
     }
 
     &__body--button {
@@ -165,6 +203,11 @@
             font-weight: normal;
             font-size: 18px;
             line-height: 30px;
+
+            @media (max-width: $mobile) {
+              width: auto;
+              
+            }
         }
         .field-text {
             resize: vertical;
